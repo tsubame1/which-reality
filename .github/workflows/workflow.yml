@@ -25,6 +25,7 @@ jobs:
     # Runs the code in an Apache/PHP web server container
     - name: Startup web server
       run: docker run -v $(pwd):/var/www/html -dit --rm --name php php:apache 
+     # ryananicholson/secure-web
 
     # Run OWASP Scan and create Issue of results
     - name: OWASP ZAP Baseline Scan
